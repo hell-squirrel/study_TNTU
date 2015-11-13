@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>230</width>
+    <height>80</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>230</width>
+    <height>80</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>230</width>
+    <height>80</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form1</string>
+  </property>
+  <widget class="QPushButton" name="buttonMarks">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>91</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>With Marks</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonNoMarks">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>30</y>
+     <width>91</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Without Marks</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonMarks</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>WithMarks()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>114</x>
+     <y>39</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonNoMarks</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>WithoutMarks()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>114</x>
+     <y>39</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>WithMarks()</slot>
+  <slot>WithoutMarks()</slot>
+ </slots>
+</ui>
